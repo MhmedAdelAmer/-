@@ -219,7 +219,9 @@ footer {
 
 #footer-social-icons {
     margin-top: 1rem;
-    /* justify-content: center; */
+    justify-content: space-between;
+    display: flex;
+
 
 }
 
