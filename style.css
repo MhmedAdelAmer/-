@@ -6,6 +6,7 @@
     font-family: 'Story Script', cursive;
 
 }
+
 :root {
     --bg: #293d60;
     --panel: #182c57;
@@ -313,8 +314,45 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
     .menu-toggle {
         display: block;
+    }
+
+    .imag img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 2rem;
+        margin-right: -1.5rem;
+    }
+
+    .hero {
+        margin-bottom: 5rem;
+    }
+
+    .hero h1,
+    .hero p,
+    .btn {
+        margin-top: 1rem;
+    }
+
+    .circle-anim.one {
+        width: 280px;
+        height: 280px;
+    }
+
+    .circle-anim.two {
+        width: 320px;
+        height: 320px;
+    }
+
+    .circle-anim.three {
+        width: 360px;
+        height: 360px;
     }
 }
 
@@ -333,16 +371,19 @@ footer {
     color: #00bcd4;
 }
 
+
 .container {
     width: 90%;
     margin: auto;
     overflow: hidden;
 }
 
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 
 .column {
     width: 100%;
@@ -366,6 +407,7 @@ img {
     }
 }
 
+/* ========== الديسكتوب (>= 1024px) ========== */
 @media (min-width: 1024px) {
     body {
         font-size: 20px;
@@ -381,6 +423,7 @@ img {
         float: left;
     }
 }
+
 
 .imag {
     position: relative;
@@ -426,6 +469,7 @@ img {
     animation-direction: reverse;
 }
 
+
 @keyframes rotate {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -436,51 +480,163 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
     header {
         flex-direction: column-reverse;
+        padding: 0.5rem;
         text-align: center;
     }
 
     .imag img {
-        width: 250px;
-        height: 250px;
-        margin-bottom: 2rem;
-        margin-right: -1.5rem;
-    }
-
-    .hero {
-        margin-bottom: 5rem;
-    }
-
-    .hero h1,
-    .hero p,
-    .btn {
-        margin-top: 1rem;
+        width: 180px;
+        height: 180px;
+        margin-bottom: 1rem;
     }
 
     .circle-anim.one {
-        width: 280px;
-        height: 280px;
+        width: 200px;
+        height: 200px;
     }
 
     .circle-anim.two {
-        width: 320px;
-        height: 320px;
+        width: 230px;
+        height: 230px;
     }
 
     .circle-anim.three {
-        width: 360px;
-        height: 360px;
+        width: 260px;
+        height: 260px;
+    }
+
+    .social-icons {
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .column {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
     }
 }
 
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
 
+    header {
+        flex-direction: column-reverse;
+        padding: 0.5rem;
+        text-align: center;
+    }
 
+    .imag img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 1rem;
+    }
 
+    .circle-anim.one {
+        width: 200px;
+        height: 200px;
+    }
 
+    .circle-anim.two {
+        width: 230px;
+        height: 230px;
+    }
 
+    .circle-anim.three {
+        width: 260px;
+        height: 260px;
+    }
 
+    .social-icons {
+        gap: 8px;
+        font-size: 15px;
+    }
 
+    .btn {
+        font-size: 13px;
+        padding: 0.4rem 0.8rem;
+    }
+}
 
+/* 📱 شاشات أصغر (أقل من 360px) */
+@media (max-width: 360px) {
+    body {
+        font-size: 12px;
+    }
 
+    .imag img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle-anim.one {
+        width: 170px;
+        height: 170px;
+    }
+
+    .circle-anim.two {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle-anim.three {
+        width: 230px;
+        height: 230px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 0.3rem 0.7rem;
+    }
+}
+
+/* 📱 شاشات صغيرة جدا (أقل من 320px) */
+@media (max-width: 320px) {
+    body {
+        font-size: 11px;
+    }
+
+    .imag img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .circle-anim.one {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle-anim.two {
+        width: 180px;
+        height: 180px;
+    }
+
+    .circle-anim.three {
+        width: 210px;
+        height: 210px;
+    }
+
+    .social-icons {
+        gap: 6px;
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 11px;
+        padding: 0.2rem 0.6rem;
+    }
+}

@@ -32,7 +32,7 @@
 </head>
 
 <body>
-<!-- *//////////////////////================/////////////////////////// -->
+    <!-- *//////////////////////================/////////////////////////// -->
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
@@ -57,7 +57,7 @@
             <a href="https://wa.me/201147065875" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </nav>
-<!-- *//////////////////////================/////////////////////////// -->
+    <!-- *//////////////////////================/////////////////////////// -->
     <!-- Header -->
     <header id="home">
         <div class="imag">
@@ -73,10 +73,11 @@
                     مرحبًا، أنا <span class="name" style="color:#ae960d; font-size:40px;">عبدالرحمن زيدان</span>
                     <p class="vyes">✔</p>
                 </h1>
+                <a href="#resume" class="btn">السيرة الذاتية</a> 
             </div>
         </div>
     </header>
-<!-- *//////////////////////================/////////////////////////// -->
+    <!-- *//////////////////////================/////////////////////////// -->
     <!-- About -->
     <section id="about" class="section">
         <h2>من أنا</h2>
@@ -104,7 +105,7 @@
             على مجال واحد، بل هو التزام في كل ميدان.
         </p>
     </section>
-<!-- *//////////////////////================/////////////////////////// -->
+    <!-- *//////////////////////================/////////////////////////// -->
     <!-- Skills -->
     <section class="section" id="skills">
         <h2 class="title">المهارات</h2>
@@ -173,7 +174,7 @@
 
             <!-- زر الطباعة -->
             <div class="actions" style="margin-top:20px; text-align:center;">
-                <button class="btn" onclick="window.print()">🖨 طباعة السيرة الذاتية</button>
+                <button class="btn" class="btn" onclick="window.print()">🖨 طباعة السيرة الذاتية</button>
             </div>
         </div>
     </section>
@@ -187,8 +188,8 @@
     </section>
 
     <footer>
-        <p>©© 2025 Mohmed Adel Amer. All Rights Reserved. </p>
-        <div class="social-icons-footer" >
+        <p>©© 2025 Mohmed Adel Amer. All Rights Reserved.0 </p>
+        <div class="social-icons-footer">
             <a href="https://wa.me/201208248081" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             -
             <a href="https://www.linkedin.com/in/mohamed-amer-503099309" aria-label="LinkedIn"><i
@@ -197,7 +198,15 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
 
 </body>
 
